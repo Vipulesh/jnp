@@ -1,0 +1,217 @@
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: url('backgrd.jpg');
+    background-position: center;
+    background-size:cover;
+}
+.header_about{
+    min-height: 80vh;
+    width:100%;
+    background-image: url('histrh.jpeg');
+    background-position: center;
+    background-size:cover;
+}
+.cont_ab{
+    width:100%;
+    position: absolute;
+    top: 30%;
+    text-align:center;
+    color:white;
+}
+.geojnp{
+    min-height:100vh;
+    background-color: peachpuff;
+}
+.histjnp h1, .geojnp h1{
+    font-size: 50px;
+    text-align: center;
+    margin-left:5%;
+    margin-right:5%;
+}
+.histjnp p, .geojnp p{
+    font-size: 25px;
+    margin-left:5%;
+    margin-right:5%;
+}
+.histjnp:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)) ,url('sq.jpg');
+    background-position: center;
+    background-size:cover;
+    min-height: 100vh;
+    transition: 2s;
+}
+.geojnp:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)) ,url('Jnp.png');
+    background-position: center;
+    background-size:cover;
+    min-height: 100vh;
+    transition: 2s;
+}
+.descr{
+    min-height: 90vh;
+    background-image: url('99836.jpg');
+    background-size: cover;
+}
+.hea{
+    position:absolute;
+    right:0;
+    top: 900px;
+    background-image: url('ShahiPul.jpg');
+    min-height: 40vh;
+    background-size: cover;
+    width: 40%;
+    color: white;
+}
+.vido{
+    margin-left: 40%;
+    width:60%;
+}
+.gmp h1{
+    position: absolute;
+    margin-top:12%;
+    margin-left:55%;
+}
+.vt h1{
+    position: absolute;
+    margin-left:1%;
+    font-size: 60px;
+    margin-top: 12%;
+}
+.descont{
+    position: absolute;
+    width: 57%;
+    right:42%;
+    left:10px;
+    font-size: 20px;
+    min-height: 90vh;
+    color:rgb(66, 0, 110);
+}
+.hea:hover{
+    background-image: url('backdesp.jpg');
+    color:rgb(86, 0, 166);
+    transition: 2s;
+}
+.hea h1{
+    text-align: center;
+    font-size: 60px;
+}
+.hea1{
+    position:absolute;
+    left:0;
+    margin-top: 5%;
+    min-height: 10vh;
+    width: 45%;
+    text-align: center;
+    color:white;
+}
+.cont_ab h1{
+    font-size: 40px;
+}
+.cont_ab p{
+    font-size: 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+    color:white;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-cont ul li a{
+    font-size: 30px;
+    text-decoration: none;
+}
+.nav-cont ul li::after{
+    content:'';
+    width:0%;
+    height:4px;
+    background: red;
+    display: block;
+    margin:auto;
+    transition:0.8s;
+}
+.nav-cont ul li:hover::after{
+    width:100%;
+}
+nav a:visited{
+    text-decoration: none;
+    color:white;
+}
+nav img{
+   height:100px; 
+}
+.cont{
+    width:90%;
+    position: absolute;
+    top: 40%;
+    left:5%;
+    text-align:center;
+    color:white;
+}
+.cont h1{
+    font-size:60px;
+}
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    border: 2px solid white;
+    padding: 12px 34px;
+    font-size:14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color:white;
+}
+.btn:hover{
+    border:2px solid rgb(20, 0, 135);
+    background: rgb(200, 0, 255);
+    transition: 2s;
+}
+hr{
+    color:white;
+    background-color: white;
+    height: 4px;
+    left: 8%;
+}
+.graph{
+    min-height: 40vh;
+    background-image: url('The_banks_of_river_Gomati_in_Jaunpur.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 26px;
+}
+.sound{
+    align:center;
+    float: left;
+    left: 10%;
+    position: relative;
+}
+.yt{
+    float: left;
+    position: relative;
+    left: 55%;
+    display: inline-block;
+} 
+.dr{
+    min-height: 100vh;
+}
+.footer{
+    background-image: linear-gradient(#000000,#434343);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 18vh;
+}

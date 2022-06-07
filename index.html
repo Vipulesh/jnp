@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="l3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        #div1,
+        #div2,
+        #div3,
+        #div4 {
+            position: relative;
+            margin-left: 45px;
+            float: left;
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #div5,
+        #div6 {
+            position: relative;
+            margin-left: 20%;
+            float: left;
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+    <script>
+        function clickCounter() {
+            if (typeof (Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                } else {
+                    sessionStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="l.png" height="100px"></a>
+            <div class="nav-cont">
+                <ul>
+                    <li><a href="hometown.html">Home</a></li>
+                    <li><a href="about.html">More About Jaunpur</a></li>
+                    <li><a href="Resume.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cont">
+            <h1>‘Shiraz-e-Hind’<br>Jaunpur</h1>
+            <p><br>Well-known for its past and the glory of learning Jaunpur holds its own important historical, social
+                and political status.</p>
+            <br><br><a href="about.html" class="btn">Know More About Jaunpur</a>
+        </div>
+    </section>
+    <section class="descr">
+        <div class="hea">
+            <br><br><br><br><br>
+            <h1>Description</h1>
+        </div>
+        <div class="descont">
+            <strong>
+                <p>
+                    Situated on the banks of river Gomti, Jaunpur is a remarkable mixture of the Ganga-Jamuni Tehzeeb.
+                    Jaunpur is a city and a municipal board in Jaunpur district in the Indian state of Uttar Pradesh. It
+                    is located 228 km southeast of state capital Lucknow.<br><br>Jaunpur is located to the northwest of
+                    the district of Varanasi in the eastern part of the North Indian state of Uttar Pradesh.
+                    Demographically, Jaunpur resembles the rest of the Purvanchal area in which it is
+                    located.<br><br>Historically known as 'Shiraz-e-hind', Jaunpur is a humbling town with grand
+                    architecture.<br>Gomti, Sai, Varuna, Pili, and Basuhi are the five rivers which make its land
+                    fertile.<br><br>There are a huge number of Tourist Attractions in Jaunpur. Every year thousands of
+                    visitors come from every corner of the world to visit this beautiful city of Jaunpur. The Tourist
+                    Attractions in Jaunpur include monuments like the Shahi Bridge and Yamdagni Ashram, museums like the
+                    Archaeological Museum, Botany Museum and Zoological Museum, holy places like the Atala Masjid, Jami
+                    Masjid, Lal Darwaza Masjid, Khalis Mukhlis Masjid, Shitla Choukiya Dham, Temple of Mihar Devi,
+                    Temple of Sheetla Devi, Sadar Imambara, Kadam Rasool, Panje Shareef and Trilochan Mahadev
+                    Temple.<br><br>My hometown will always have a special place in my heart, growing up in the city of
+                    Jaunpur was a humbling as well as exciting experience for me. The peacefulness, calmness and the
+                    serenity of living in this quaint town is something that I will strive to find somewhere else in the
+                    world. The varied mix of different cultures and heritages provide a unique perspective to our city.
+                </p>
+            </strong>
+        </div>
+    </section>
+    <section class="graph">
+        <div class="hea1">
+            <h1>Know More About This Amazing City</h1>
+            <p>Through This YouTube Video</p>
+            <audio controls>
+                <source src="river-1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="yt">
+            <iframe src="https://www.youtube.com/embed/5Q6ROaUxpc4?autoplay=1&mute=1" height="282px" width="484px">
+            </iframe>
+        </div>
+    </section>
+    <section class="vid"
+        style="background-image: url('bckgrvid.jpeg'); background-position: center; background-repeat: no-repeat; background-size:cover;">
+        <div class="vt">
+            <h1 style="color:white">First Times</h1>
+        </div>
+        <div class="vido">
+            <video width="900px" height="480px" controls autoplay muted>
+                <source src="vid.mp4" type="video/mp4">
+                <source src="vid.ogg" type="video/ogg">
+            </video>
+        </div>
+    </section>
+
+    <section class="gmp"
+        style="min-height:40vh; background-image: url('203572.jpg'); background-position: center; background-repeat: no-repeat; background-size:cover;">
+        <h1 style="color:white; font-size: 60px;">Google Map Of Jaunpur</h1>
+        <div class="mp" style="margin-left: 5%;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28750.264443442375!2d82.66301437389667!3d25.744686953229632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39903a2c93994715%3A0xf9a9f10dc97322!2sJaunpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1649221503210!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="mp1" style="margin-left: 55%; color:white;">
+            <p>Click Here to get your Coordiantes</p>
+            <button onclick="getLocation()">Location</button>
+            <p id="demo"></p>
+            <script>
+                var x = document.getElementById("demo");
+                function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                        x.innerHTML = "Geolocation is not supported by this browser.";
+                    }
+                }
+
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                        "<br>Longitude: " + position.coords.longitude;
+                }
+            </script>
+        </div>
+    </section>
+    <section class="dr"><br>
+        <br>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="am.jpeg" draggable="true" ondragstart="drag(event)" id="drag1" width="300px" height="200px"><br>
+            <p style="text-align:center; font-size:24px">Atala Masjid</p><br>
+        </div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="jm.jpeg" draggable="true"
+                ondragstart="drag(event)" id="drag2" width="300px" height="200px"><br>
+            <p style="text-align:center; font-size:24px">Jama Masjid</p><br>
+        </div>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="sq.jpg" draggable="true"
+                ondragstart="drag(event)" id="drag3" width="300px" height="200px"><br>
+            <p style="text-align:center; font-size:24px">Shahi Qila</p><br>
+        </div>
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="h_bckg1.jpg" draggable="true"
+                ondragstart="drag(event)" id="drag3" width="300px" height="200px"><br>
+            <p style="text-align:center; font-size:24px">Diwani Kacheri</p><br>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="drtxt">
+            <p style="font-size:24px; text-align:center;">Drag and Drop the places you would visit in the box below</p>
+        </div><br><br>
+        <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section class="webs" style="text-align:center; font-size:20px;">
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+        <div id="result"></div>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+    </section>
+    <section class="footer">
+        <div class="hn" style="text-align:center; position:relative;">
+            <a href="https://www.linkedin.com/in/vipulesh-tiwari-010a36227/"><img src="Screenshot (180).png"></a>
+            <a href="https://github.com/Vipulesh"><img src="Screenshot (178).png"></a>
+            <a href="https://twitter.com/Vipulesh7"><img src="tw.png"></a>
+        </div>
+    </section>
+</body>
+
+</html>
